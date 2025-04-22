@@ -2,9 +2,10 @@
 #include <algorithm>
 #include <iostream>
 #include <fstream>
+#include <string>
 
-#define INPUT_FILE "input.txt" // CHANGE THIS FOR CUSTOM INPUTS
-#define OUTPUT_FILE "output.txt"
+#define INPUT_FILE "testcases/input.txt" // CHANGE THIS FOR CUSTOM INPUTS
+#define OUTPUT_FILE "testcases/output.txt"
 
 using namespace std;
 
@@ -50,15 +51,18 @@ int kruskals(int n, vector<vector<int>>& e) {
             k.u(e[i][0], e[i][1]);
             cost += e[i][2];
             count++;
-            cout << "edge (" << e[i][0] << ", " << e[i][1] << ", " << e[i][2] << ") added" << endl;
+            //cout << "edge (" << e[i][0] << ", " << e[i][1] << ", " << e[i][2] << ") added" << endl;
             if (count == n-1) break;
         }
     }
     return cost;
 }
 
-int main() {
-    ifstream infile(INPUT_FILE);
+int main(int argc, char* argv[]) {
+    string filename = INPUT_FILE;
+    if (argc > 1) filename = argv[1];
+
+    ifstream infile(filename);
     int V, E;
     vector<vector<int>> edges;
     infile >> V >> E;
@@ -68,9 +72,6 @@ int main() {
         edges.push_back(temp);
     }
     
-    // debug
-    cout << "input read" << endl;
-
     int result = kruskals(V, edges);
 
     cout << result << endl;
