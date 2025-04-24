@@ -1,7 +1,7 @@
 # COP4533 Kruskal's MST Project
 Created by Lydia Chung and Lauren Nunag.
 
-This project implements Kruskal’s Algorithm to compute the Minimum Spanning Tree (MST).The program reads input from a file, then processes the graph edges using a greedy approach with a Disjoint Set Union (DSU) structure, and then outputs the total weight of the MST along with the selected edges. 
+This project implements Kruskal’s Algorithm to compute the Minimum Spanning Tree (MST). The program reads input from a file, then processes the graph edges using a greedy approach with a Disjoint Set Union (DSU) structure, and then outputs the total weight of the MST along with the selected edges. 
 
 ## How to Run
 ```
@@ -10,7 +10,7 @@ $ ./kruskals.o
 or
 $ ./kruskals.o testcases/inputN.txt
 ```
-The output is printed on `stdout` and in `testcases/output.txt`. If no input file path is provided, the algorithm defaults to running an example test case stored at `testcases/input.txt`. There are inputs of various sizes provided in the `testcases` folder; replace `N` with a value between 1 and 7 to use any of the inputs I generated with the `test_case_gen.py` script.
+The output is printed on `stdout` and in `testcases/output.txt`. If no input file path is provided, the algorithm defaults to running an example test case stored at `testcases/input.txt`. There are inputs of various sizes provided in the `testcases` folder; replace `N` with a value between 1 and 7 to use any of the inputs generated with the `test_case_gen.py` script.
 
 ## Input Format and Testcase Generation 
 Input is read from `input.txt` in the format below, where `V` and `E` are the number of vertices and edges in the graph. In the next `E` lines, each line describes edge `i` with three values: `u_i`, `v_i`, and `w_i`, which are the source, destination, and weight of edge `i` respectively.
