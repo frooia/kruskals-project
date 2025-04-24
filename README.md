@@ -29,6 +29,7 @@ Testcases can be generated with the `test_case_gen.py` script. The values of `V`
 ├── Makefile                // makefile to compile code
 ├── README.md               // this file
 ├── report.pdf              // report document
+├── slides.pdf              // presentation slides 
 ├── test_case_gen.py        // test case generation script
 └── testcases               // all testcases we generated and used
     ├── input.txt
