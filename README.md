@@ -1,6 +1,8 @@
 # COP4533 Kruskals Project
 Lydia Chung and Lauren Nunag
 
+This project implements Kruskal’s Algorithm to compute the Minimum Spanning Tree (MST). 
+
 # Input 
 Input is read from “input.txt” in the format below, where V and E are the number of vertices and edges in the graph. In the next E lines, each line describes edge i with three values: u_i, v_i, and w_i, which are the source, destination, and weight of edge i respectively.
 
