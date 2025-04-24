@@ -46,7 +46,7 @@ struct dsu {
     }
 };
 
-// custom comparater to sort edges by weight
+// custom comparator to sort edges by weight
 bool comp(vector<int>& a, vector<int>& b) {
     return a[2] <= b[2];
 }
