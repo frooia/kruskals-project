@@ -1,7 +1,7 @@
 # COP4533 Kruskal's MST Project
 Created by Lydia Chung and Lauren Nunag.
 
-This project implements Kruskal’s Algorithm to compute the Minimum Spanning Tree (MST) for a weighted,. The program reads input from a file, then processes the graph edges using a greedy approach with a Disjoint Set Union (DSU) structure, and then outputs the total weight of the MST along with the selected edges. 
+This project implements Kruskal’s Algorithm to compute the Minimum Spanning Tree (MST) for a weighted, undirected. The program reads input from a file, then processes the graph edges using a greedy approach with a Disjoint Set Union (DSU) structure, and then outputs the total weight of the MST along with the selected edges. 
 
 ## How to Run
 ```
