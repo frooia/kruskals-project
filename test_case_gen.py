@@ -1,16 +1,23 @@
 import random
 
-infile = open("testcases/input1.txt", "w")
+infile = open("testcases/input7.txt", "w")
 
-V = random.randrange(10000)
-E = random.randrange(10000)
+V = 2500
+E = 5000
 infile.write(str(V) + " " + str(E) + "\n");
 
-for i in range(E):
-    src = random.randrange(E)
-    dest = random.randrange(E)
+# generate a connected graph
+for i in range(V - 1):
+    src = i
+    dest = random.randrange(src+1, V)
+    w = random.randrange(10000)
+    infile.write(str(src) + " " + str(dest) + " " + str(w) + "\n")
+
+for i in range(E - V + 1):
+    src = random.randrange(V)
+    dest = random.randrange(V)
     while (src == dest):
-        dest = random.randrange(E)
+        dest = random.randrange(V)
     w = random.randrange(10000)
     infile.write(str(src) + " " + str(dest) + " " + str(w) + "\n")
 
